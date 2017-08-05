@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" style="-fx-background-image: url(Picture/background.jpg);" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" vgap="15.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Describe_System_View_Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="400.0" text="此系统操作简便，界面美观，安全稳定。" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label prefWidth="400.0" text="该系统目的是为了让广大用户更方便地管理联系人信息，便于工作和生活。" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label text="希望这款系统能为您带来非凡的体验。" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="400.0" text="若有任何建议或意见，请联系开发者：jerrywu.aiesec.scau@gmail.com、1035214549@qq.com、1483130967@qq.com。" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#BackToStart" text="返回" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="30.0" />
+         </GridPane.margin></Button>
+   </children>
+</GridPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="900.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TopView_Controller">
+   <children>
+      <Label fx:id="address_book_name" alignment="CENTER" contentDisplay="CENTER" prefWidth="100.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></Label>
+      <Button mnemonicParsing="false" onAction="#createContact" text="新建联系人">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#createGroup" text="新建分组">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#deleteGroup" text="删除分组">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#BackToStart" text="返回开始界面">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Picture/search.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="search">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button mnemonicParsing="false" onAction="#search" style="-fx-background-color: #1f92ea;" text="搜索" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets left="20.0" />
+   </padding>
+</HBox>

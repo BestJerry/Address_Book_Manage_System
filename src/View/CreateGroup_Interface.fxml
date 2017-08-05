@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CreateGroup_Controller">
+   <children>
+      <VBox alignment="CENTER" layoutX="178.0" layoutY="105.0" spacing="20.0">
+         <children>
+            <Label text="请输入您要新建的分组名">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="group_name">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label fx:id="tip1" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: red;" text="您的输入为空或该分组已存在!" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onAction="#confirm" style="-fx-background-color: green;" text="新建并保存" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label fx:id="tip2" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: green;" text="新建成功!" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</Pane>
